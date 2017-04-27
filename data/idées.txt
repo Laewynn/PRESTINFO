@@ -1,0 +1,4 @@
+afficher un tableau dans chaque index de catégories, salariés, profil etc... avec le nom de chaque libellé nom, prenom etc.. 
+puis les boutons modifier/supprimer
+
+Il faudrait aussi faire quand on appuie sur supprimer faire une verif oui ou non si on veut vraiment le supprimer

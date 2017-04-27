@@ -1,0 +1,140 @@
+*{
+	margin:0;
+
+}
+html{
+	/* background-image : url(Drapeau-Carte-de-Bretagne.jpg); */
+	background-position:center;
+	background-repeat: no-repeat;
+	background-origin : content-box;
+	font-weight: bold;
+	background-color: #212121;
+
+}
+#salaries{
+    margin-left: 20%;
+ }
+
+#profil{
+    margin-left: 30%;
+}
+body{
+font-family: Gadugi;
+color:#165a70;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction : column;
+}
+
+h1{
+font-family: Calibri;
+text-align: center;
+	color: brown;
+}
+
+h2{
+    color: darkred;
+    font-family: Candara;
+    font-face: Roboto;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#add{
+    margin-left:80%;
+}
+
+table, table * {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-width:1px;
+	border-color: transparent;
+	border-collapse:collapse;
+    border-style:solid;
+    font-family: Gadugi;
+}
+
+table{
+     width: 100%;
+     border-width:100%;
+     border-style:groove;
+     padding: 0px;
+}
+
+#titres{
+	color: white;
+}
+td{
+    text-align: center;
+}
+
+.corbeille{
+	fill: #165a70;
+}
+
+
+
+
+#sujet{
+	
+}
+
+.sujet{
+	
+}
+
+.utilisateur{
+	border-width:1px;
+	border-style:solid;
+	border-color:#165a70;
+}
+
+.titre{
+	border-width:1px;
+	border-style:solid;
+	border-color:#165a70;	
+}
+
+a{
+text-decoration: #165a70;
+color: #165a70;
+}
+
+a:visited{
+	color: #165a70;
+}
+#header{
+color: #165a70;
+width: 100%;
+line-height: 12.5vh;
+text-align: center;
+/* background-color: red; */
+}
+
+#content{
+color: #165a70;/*#20B2AA*/ 
+
+	width: calc(100%   		/*Taille totale */
+				- 10px 		/* Taille du padding left du content */
+				- 10px    	/* Taille du padding right du content */
+	);
+
+	height: calc(100%  		/* Taille totale */
+				- 100px 	/* Taille du header */
+				- 100px 	/* Taille du footer */
+				- 10px 		/* Taille du padding left du content */
+				- 10px   	/* Taille du paddinf right du content */
+	);
+
+
+	padding:10px;
+}
+
+#footer{
+color: #165a70;
+line-height:12.5vh;
+width:  100%;
+text-align: center;
+/* background-color: yellow; */
+}
+
