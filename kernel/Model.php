@@ -278,7 +278,7 @@
 
        	$sql->execute();
        	$bdd = null;
-         echo " <br/> Supprimer une ligne de la table : <br/> " .$req;
+         //echo " <br/> Supprimer une ligne de la table : <br/> " .$req;
         
     }
 

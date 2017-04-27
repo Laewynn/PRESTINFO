@@ -48,7 +48,7 @@ echo '
 			modal: true,
 			buttons: {
 				"Oui": function() {
-					window.location.href = "<?php echo DIR_WEBROOT; ?>ccategorie/delete/" + $("#id_sup").html();
+					window.location.href = "'.DIR_WEBROOT.'ccategorie/delete/" + $("#id_sup").html();
 				},
 				"Non": function() {
 					$( this ).dialog( "close" );

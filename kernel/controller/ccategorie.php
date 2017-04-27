@@ -26,7 +26,7 @@ class ccategorie extends Controller {
         $this->categorie->setPuKm($_POST['pu_km']);
         $this->categorie->setPuRepas($_POST['pu_repas']);
         $this->categorie->create();
-        $this->render('create');
+        $this->index();
     }
 
 
@@ -45,13 +45,13 @@ class ccategorie extends Controller {
     }
 
     public function update($id) {
-        var_dump($_POST);
+        //var_dump($_POST);
         $this->categorie->setMatriculeCategorie('');
         $this->categorie->setLibelleCategorie($_POST['libelle_categorie']);
         $this->categorie->setPuKm($_POST['pu_km']);
         $this->categorie->setPuRepas($_POST['pu_repas']);
         $this->categorie->update($id);
-        $this->render('update');
+        $this->index();
     }
 
     public function delete($id){
