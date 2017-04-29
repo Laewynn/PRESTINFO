@@ -1,12 +1,10 @@
-<h2>CATÉGORIES</h2>
-
-<a href="<?php echo DIR_WEBROOT; ?>ccategorie/fcreate/"><svg id="add" xmlns="http://www.w3.org/2000/svg" fill="#165a70" width="32" height="32" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/> </svg> </a>
+<a href="<?php echo DIR_WEBROOT; ?>ccategorie/fcreate/"AJOUTER><svg id="add" xmlns="http://www.w3.org/2000/svg" fill="#165a70" width="32" height="32" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/> </svg></a>
 <?php
 $v = $this->viewvar;
 if(!empty($v)){
 echo "
-<table>
 
+<table>
 <tr id='titres'>
 	<th> Matricule catégorie</th>
 	<th> Libellé catégorie</th>
@@ -16,7 +14,7 @@ echo "
 	<th> Suppression</th>
 </tr>";
  foreach($categorie as $k => $v) {
-		echo '</br><a href =  "'.DIR_WEBROOT.'ccategorie/read/'.$v['matricule_categorie'].'">
+		echo '<a href =  "'.DIR_WEBROOT.'csalarie/read/'.$v['matricule_categorie'].'">
 		<tr>
 			<td> '.$v['matricule_categorie'].'</td>
 			<td> '.$v['libelle_categorie'].'</td>
@@ -27,7 +25,7 @@ echo "
 			<!-- <a href="'.DIR_WEBROOT.'ccategorie/delete/'.$v['matricule_categorie'].'"> -->
 
 				</tr>
-	</a> </br>';
+	</a>';
 	}
 
 	//print_r($categ);

@@ -1,5 +1,5 @@
 <?php
-
+require_once(DIR_CORE."Model.php");
 class emploi extends Model{
     protected $matricule_emploi;
     protected $libelle_emploi;

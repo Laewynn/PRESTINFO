@@ -24,7 +24,7 @@ define('DIR_IMG', DIR_WEBROOT.'img/');
 			$action = 'index'; // Pas de paramètre cela renvoie vers index
 		}
 	}else{
-		$controller = 'ccategorie';
+		$controller = 'cindex';
 		$action = 'index';
 	}
 	if(isset($pwet[2])){

@@ -35,14 +35,20 @@ text-align: center;
 
 h2{
     color: darkred;
-    font-family: Candara;
-    font-face: Roboto;
-    text-align: left;
+    font-family: Gadugi;
+
     margin-left: 10%;
 }
-
+#titre_page{
+	margin-left: 20%;
+	font-weight: bold;
+}
 #add{
     margin-left:80%;
+}
+
+#add_texte{
+	margin-left:50%;
 }
 
 table, table * {
@@ -56,7 +62,7 @@ table, table * {
 
 table{
      width: 100%;
-     border-width:100%;
+     border-width: inherit;
      border-style:groove;
      padding: 0px;
 }
@@ -68,27 +74,67 @@ td{
     text-align: center;
 }
 
+#type {
+	color: white;
+}
+
 .corbeille{
 	fill: #165a70;
 }
-
-
-
-
-#sujet{
-	
+text{
+	color: white;
+}
+ul{
+	display: table;
+	width: 500px;
+	margin: 20px auto;
+	padding: 0;
 }
 
-.sujet{
-	
+ul li{
+	display: table-cell;
 }
 
-.utilisateur{
+hr{
+	position: center;
+}
+
+#formulaire{
+	background-color: rgba(0, 0, 0, 0.1);
 	border-width:1px;
+	border-color: white;
 	border-style:solid;
-	border-color:#165a70;
+	font-family: Gadugi;
+	width: 50%;
+	height: 60%;
+	margin: auto;
+}
+legend{
+	text-align: center;
+	color : chartreuse;
+}
+#tableau{
+	width: 100%;
+	height: 90%;
 }
 
+#libelle{
+	font-weight: bold;
+}
+#champ{
+	background-color: white;
+	width: 80%;
+}
+
+#bouton{
+	background: #212121;
+	width: 10%;
+	margin-left: 45%;
+}
+
+#erreur{
+	display : none.
+}
 .titre{
 	border-width:1px;
 	border-style:solid;
@@ -108,6 +154,7 @@ color: #165a70;
 width: 100%;
 line-height: 12.5vh;
 text-align: center;
+	height: 25%;
 /* background-color: red; */
 }
 

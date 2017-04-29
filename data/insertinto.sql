@@ -60,7 +60,7 @@ INSERT INTO `profil` (`id_profil`,`surnom_profil`, `mdp_profil`, `accreditation_
 -- Contenu de la table `salarie`
 --
 
-INSERT INTO `salarie` (`id_salarie`, `nom_salarie`, `prenom_salarie`, `codepostal_salarie`, `rue_salarie`, `ville_salarie`, `matricule_emploi`) VALUES
+INSERT INTO `salarie` (`id_salarie`, `nom_salarie`, `prenom_salarie`,`rue_salarie`,`codepostal_salarie`, `ville_salarie`, `matricule_emploi`) VALUES
 (1, 'PITT', 'Brad', '123 rue d''amiens', '35000', 'RENNES', 'ADMRE'),
 (2, 'PAPIN', 'Roger', '44 rue nationale', '35000', 'RENNES', 'INGSY'),
 (3, 'VARIN', 'Elise', '51 rue des fleurs', '35000', 'RENNES', 'FORMA'),

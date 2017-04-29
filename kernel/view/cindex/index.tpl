@@ -1,12 +1,1 @@
-
-<h2> Accueil </h2>
-<div id="salaries">
-<h2> SALARIES </h2>
-</div>
-<div id="profil">
-<h2> PROFIL </h2>
-</div>
-
-<div id="profil">
-   <a href="'.DIR_ROOT.'ccategorie">" <h2> PROFIL </h2> </a>
-</div>
+<h2> Page d'accueil du projet PRESTINFO, le projet n'est pas encore terminé pour l'instant mais bientôt il le sera ! :D </h2>

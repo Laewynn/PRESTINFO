@@ -1,17 +1,27 @@
 <?php $t = explode('/',$_GET['p']); 
-foreach($categorie as $k => $v) {
+foreach($salarie as $k => $v) {
 echo '<form action="'.DIR_WEBROOT.'ccategorie/update/'.$t[2].'" method="post">
     <fieldset id="formulaire">
         <table id="tableau">
-            <legend> Modification d\'une catégorie </legend> <!-- Titre du fieldset -->
+            <legend> Modification d\'un salarié </legend> <!-- Titre du fieldset -->
             <tr>
                 <th> Matricule : </th>
-                <th> <input id="champ"  type="text" name= "matricule_categorie" value="'.$v['matricule_categorie'].'"/></th>
+                <th> <input id="champ"  type="text" name= "id_salarie" value="'.$v['id_salarie'].'"/></th>
             </tr>
 
             <tr>
                 <th> Libellé : </th>
-                <th> <input id="champ" type="text" name= "libelle_categorie" value="'.$v['libelle_categorie'].'"/></th>
+                <th> <input id="champ" type="text" name= "nom_salarie" value="'.$v['nom_salarie'].'"/></th>
+            </tr>
+
+            <tr>
+                <th> Prix unitaire du km : </th>
+                <th> <input id="champ" type="text" name= "prenom_salarie" value="'.$v['prenom_salarie'].'"/></th>
+            </tr>
+
+            <tr>
+                <th> Prix unitaire du repas  : </th>
+                <th><input id="champ" type="text" name= "rue_salarie" value="'.$v['rue_salarie'].'"/></th>
             </tr>
 
             <tr>
@@ -23,6 +33,7 @@ echo '<form action="'.DIR_WEBROOT.'ccategorie/update/'.$t[2].'" method="post">
                 <th> Prix unitaire du repas  : </th>
                 <th><input id="champ" type="text" name= "pu_repas" value="'.$v['pu_repas'].'"/></th>
             </tr>
+
             </table>
     </fieldset>
         <br/>
