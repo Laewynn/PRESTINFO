@@ -87,7 +87,7 @@
         foreach($this as $nomColonne=>$valeurColonne){ // Pour chaque ligne dans le tableau
 			if (!in_array($nomColonne, $this->attributech)){ // Si les lignes du nom de la colonne et les attributs techniques ne sont pas dans le tableau
                 $proprietes = $proprietes . " " . $nomColonne . ",";   // pour que toutes les propriétés soit mises côtes à côtes séparées par des virgules                          
-                $valeurs = $valeurs . " '" . $valeurColonne . "',";    // pour que toutes les valeurs soit mises côtes à côtes séparées par des virgules
+                $valeurs = $valeurs . " '" . str_replace("'", "''", $valeurColonne) . "',";    // pour que toutes les valeurs soit mises côtes à côtes séparées par des virgules
 
             }
         
@@ -98,7 +98,7 @@
         echo "Valeurs : $valeurs <br/> <br/>";
 		*/
         $sql="INSERT INTO {$this->table} ($proprietes) VALUES ($valeurs)";
-        // echo "<br/> Création de la ligne <br/> " . "Requête : " . $sql;
+         echo "<br/> Création de la ligne <br/> " . "Requête : " . $sql;
         
         $bdd= $this->connexion();
         $bdd->query($sql);
@@ -230,7 +230,7 @@
             // Permet d'ajouter à la requête seulement les attributs utiles de l'objet
             if (!in_array($nomColonne, $this->attributech) && $nomColonne != $this->pk){
 
-            $propriete=$propriete. $nomColonne ."='". $valeur."'," ;
+            $propriete=$propriete. $nomColonne ."='". str_replace("'", "''", $valeur)."'," ;
             }
         }
 
@@ -254,7 +254,7 @@
          $sql = $sql . $propriete;
         $sql = substr($sql, 0, -1); 
         $sql = $sql ." WHERE $this->pk = '$valeurpk'";
-        // echo " <br/> Mise à jour de la table : <br/> " . $sql;
+        echo " <br/> Mise à jour de la table : <br/> " . $sql;
 
         $bdd = $this->connexion();
         $sql= $bdd->prepare($sql);

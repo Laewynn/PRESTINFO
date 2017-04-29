@@ -47,13 +47,13 @@ class csalarie extends Controller {
     }
 
     public function update($id) {
-        //var_dump($_POST);
-        $this->salarie->setIdSalarie($_POST['']);
+        // var_dump($_POST);
+        $this->salarie->setIdSalarie($_POST['id_salarie']);
         $this->salarie->setNomSalarie($_POST['nom_salarie']);
         $this->salarie->setPrenomSalarie($_POST['prenom_salarie']);
         $this->salarie->setCodePostalSalarie($_POST['codepostal_salarie']);
         $this->salarie->setRueSalarie($_POST['rue_salarie']);
-        $this->salarie->setVilleSalaris($_POST['ville_salarie']);
+        $this->salarie->setVilleSalarie($_POST['ville_salarie']);
         $this->salarie->update($id);
         $this->index();
     }

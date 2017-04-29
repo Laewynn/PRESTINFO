@@ -4,27 +4,17 @@
     <bookmark url="file://$PROJECT_DIR$/kernel/view/ccategorie/index.tpl" description="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot;..." line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efb804ed-58c9-43ab-8323-fbbb1cd2a076" name="Default" comment="ajout vue salarie et modif categorie (interface)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kernel/view/csalarie/fupdate.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kernel/view/csalarie/read.tpl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kernel/view/csalarie/create.tpl" afterPath="" />
+    <list default="true" id="efb804ed-58c9-43ab-8323-fbbb1cd2a076" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/insertinto.sql" afterPath="$PROJECT_DIR$/data/insertinto.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/prestinfo.sql" afterPath="$PROJECT_DIR$/data/prestinfo.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/class/emploi.php" afterPath="$PROJECT_DIR$/kernel/class/emploi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/class/salarie.php" afterPath="$PROJECT_DIR$/kernel/class/salarie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/Model.php" afterPath="$PROJECT_DIR$/kernel/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/controller/csalarie.php" afterPath="$PROJECT_DIR$/kernel/controller/csalarie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/ccategorie/fcreate.tpl" afterPath="$PROJECT_DIR$/kernel/view/ccategorie/fcreate.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/ccategorie/fupdate.tpl" afterPath="$PROJECT_DIR$/kernel/view/ccategorie/fupdate.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/ccategorie/index.tpl" afterPath="$PROJECT_DIR$/kernel/view/ccategorie/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/cindex/index.tpl" afterPath="$PROJECT_DIR$/kernel/view/cindex/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/csalarie/fcreate.tpl" afterPath="$PROJECT_DIR$/kernel/view/csalarie/fcreate.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/csalarie/fupdate.tpl" afterPath="$PROJECT_DIR$/kernel/view/csalarie/fupdate.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/csalarie/index.tpl" afterPath="$PROJECT_DIR$/kernel/view/csalarie/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kernel/view/layout/header.php" afterPath="$PROJECT_DIR$/kernel/view/layout/header.php" />
     </list>
     <ignored path="PRESTINFO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,21 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fcreate.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kernel/view/csalarie/fcreate.tpl">
+      <file leaf-file-name="ccategorie.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kernel/controller/ccategorie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="salarie.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kernel/class/salarie.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+            <state relative-caret-position="17">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -82,28 +62,48 @@
       <file leaf-file-name="fupdate.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kernel/view/csalarie/fupdate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insertinto.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/insertinto.sql">
+      <file leaf-file-name="csalarie.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kernel/controller/csalarie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+            <state relative-caret-position="629">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kernel/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="198">
+              <caret line="89" column="83" selection-start-line="89" selection-start-column="83" selection-end-line="89" selection-end-column="83" />
+              <folding>
+                <marker date="1493489207543" expanded="true" signature="3617:3675" ph="INSERT INTO $... " />
+                <marker date="1493489207543" expanded="true" signature="4890:4937" ph="SELECT * FRO... $" />
+                <marker date="1493489207543" expanded="true" signature="4890:4939" ph="SELECT * FRO... $" />
+                <marker date="1493489207543" expanded="true" signature="4890:4945" ph="SELECT * FRO... $" />
+                <marker date="1493489207543" expanded="true" signature="6420:6434" ph="SELECT * FRO... $" />
+                <marker date="1493489207543" expanded="true" signature="8669:8694" ph="UPDATE ${{$t... " />
+                <marker date="1493489207543" expanded="true" signature="9267:9314" ph="DELETE FROM " />
+                <marker date="1493489207543" expanded="true" signature="9267:9315" ph="DELETE FROM " />
+                <marker date="1493489207543" expanded="true" signature="9267:9321" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kernel/controller/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,8 +112,48 @@
       <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kernel/view/ccategorie/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="224" selection-start-line="0" selection-start-column="224" selection-end-line="0" selection-end-column="224" />
+            <state relative-caret-position="544">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kernel/view/csalarie/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insertinto.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/insertinto.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prestinfo.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/prestinfo.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -140,7 +180,6 @@
         <option value="$PROJECT_DIR$/kernel/view/ccategorie/read.tpl" />
         <option value="$PROJECT_DIR$/kernel/view/layout/footer.php" />
         <option value="$PROJECT_DIR$/kernel/controller/cindex.php" />
-        <option value="$PROJECT_DIR$/kernel/Model.php" />
         <option value="$PROJECT_DIR$/kernel/view/ccategorie/delete.tpl" />
         <option value="$PROJECT_DIR$/kernel/controller/ccategorie.php" />
         <option value="$PROJECT_DIR$/kernel/view/ccategorie/create.tpl" />
@@ -152,16 +191,17 @@
         <option value="$PROJECT_DIR$/css/formulaires.css" />
         <option value="$PROJECT_DIR$/kernel/class/emploi.php" />
         <option value="$PROJECT_DIR$/kernel/class/salarie.php" />
-        <option value="$PROJECT_DIR$/kernel/controller/csalarie.php" />
         <option value="$PROJECT_DIR$/data/prestinfo.sql" />
-        <option value="$PROJECT_DIR$/data/insertinto.sql" />
-        <option value="$PROJECT_DIR$/kernel/view/csalarie/index.tpl" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/kernel/view/ccategorie/index.tpl" />
         <option value="$PROJECT_DIR$/kernel/view/ccategorie/fcreate.tpl" />
         <option value="$PROJECT_DIR$/kernel/view/ccategorie/fupdate.tpl" />
         <option value="$PROJECT_DIR$/kernel/view/csalarie/fcreate.tpl" />
+        <option value="$PROJECT_DIR$/kernel/view/ccategorie/index.tpl" />
         <option value="$PROJECT_DIR$/kernel/view/csalarie/fupdate.tpl" />
+        <option value="$PROJECT_DIR$/kernel/controller/csalarie.php" />
+        <option value="$PROJECT_DIR$/kernel/Model.php" />
+        <option value="$PROJECT_DIR$/data/insertinto.sql" />
+        <option value="$PROJECT_DIR$/kernel/view/csalarie/index.tpl" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -391,6 +431,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PRESTINFO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PRESTINFO" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -481,12 +535,20 @@
       <workItem from="1493305572493" duration="353000" />
       <workItem from="1493307244954" duration="15139000" />
       <workItem from="1493383947650" duration="19971000" />
-      <workItem from="1493483891755" duration="2083000" />
+      <workItem from="1493483891755" duration="8145000" />
     </task>
+    <task id="LOCAL-00001" summary="ajout vue salarie et modif categorie (interface)">
+      <created>1493486479265</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493486479265</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91081000" />
+    <option name="totallyTimeSpent" value="97143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -494,7 +556,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32506528" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -546,15 +608,15 @@
         <state relative-caret-position="833">
           <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding>
-            <marker date="1493285646990" expanded="true" signature="3593:3651" ph="INSERT INTO $... " />
-            <marker date="1493285646990" expanded="true" signature="4868:4915" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="4868:4917" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="4868:4923" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="6398:6412" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="8623:8648" ph="UPDATE ${{$t... " />
-            <marker date="1493285646990" expanded="true" signature="9224:9271" ph="DELETE FROM " />
-            <marker date="1493285646990" expanded="true" signature="9224:9272" ph="DELETE FROM " />
-            <marker date="1493285646990" expanded="true" signature="9224:9278" ph="DELETE FROM " />
+            <marker date="1493489207543" expanded="true" signature="3617:3675" ph="INSERT INTO $... " />
+            <marker date="1493489207543" expanded="true" signature="4890:4937" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="4890:4939" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="4890:4945" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="6420:6434" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="8669:8694" ph="UPDATE ${{$t... " />
+            <marker date="1493489207543" expanded="true" signature="9267:9314" ph="DELETE FROM " />
+            <marker date="1493489207543" expanded="true" signature="9267:9315" ph="DELETE FROM " />
+            <marker date="1493489207543" expanded="true" signature="9267:9321" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -665,34 +727,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/view/ccategorie/update.tpl" />
     <entry file="file://$PROJECT_DIR$/kernel/view/ccategorie/delete.tpl" />
-    <entry file="file://$PROJECT_DIR$/kernel/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4624">
-          <caret line="280" column="11" selection-start-line="280" selection-start-column="11" selection-end-line="280" selection-end-column="11" />
-          <folding>
-            <marker date="1493285646990" expanded="true" signature="3593:3651" ph="INSERT INTO $... " />
-            <marker date="1493285646990" expanded="true" signature="4868:4915" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="4868:4917" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="4868:4923" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="6398:6412" ph="SELECT * FRO... $" />
-            <marker date="1493285646990" expanded="true" signature="8623:8648" ph="UPDATE ${{$t... " />
-            <marker date="1493285646990" expanded="true" signature="9224:9271" ph="DELETE FROM " />
-            <marker date="1493285646990" expanded="true" signature="9224:9272" ph="DELETE FROM " />
-            <marker date="1493285646990" expanded="true" signature="9224:9278" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/view/ccategorie/create.tpl" />
     <entry file="file://$USER_HOME$/Desktop/Formulaire_reparation.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -809,58 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/controller/ccategorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/class/categorie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/prestinfo.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/controller/csalarie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/view/csalarie/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/view/ccategorie/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="224" selection-start-line="0" selection-start-column="224" selection-end-line="0" selection-end-column="224" />
           <folding />
         </state>
       </provider>
@@ -897,18 +885,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/controller/ccategorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kernel/view/csalarie/fupdate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="17">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/view/ccategorie/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="89" column="83" selection-start-line="89" selection-start-column="83" selection-end-line="89" selection-end-column="83" />
+          <folding>
+            <marker date="1493489207543" expanded="true" signature="3617:3675" ph="INSERT INTO $... " />
+            <marker date="1493489207543" expanded="true" signature="4890:4937" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="4890:4939" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="4890:4945" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="6420:6434" ph="SELECT * FRO... $" />
+            <marker date="1493489207543" expanded="true" signature="8669:8694" ph="UPDATE ${{$t... " />
+            <marker date="1493489207543" expanded="true" signature="9267:9314" ph="DELETE FROM " />
+            <marker date="1493489207543" expanded="true" signature="9267:9315" ph="DELETE FROM " />
+            <marker date="1493489207543" expanded="true" signature="9267:9321" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/controller/csalarie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/view/csalarie/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/prestinfo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/insertinto.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        <state relative-caret-position="221">
+          <caret line="13" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
           <folding />
         </state>
       </provider>

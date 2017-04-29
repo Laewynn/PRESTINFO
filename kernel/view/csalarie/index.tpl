@@ -1,6 +1,11 @@
-<p id="titre_page">SALARIES </p>
+<html>
+<head>
+<meta charset="UTF-8">
 
-<a href="<?php echo DIR_WEBROOT; ?>ccategorie/fcreate/"> <p id ="add_texte"> AJOUTER</p><svg id="add" xmlns="http://www.w3.org/2000/svg" fill="#165a70" width="32" height="32" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/> </svg>   </a>
+</head>
+<p id="titre_page" xmlns="http://www.w3.org/1999/html">SALARIES </p>
+
+<a href="<?php echo DIR_WEBROOT; ?>csalarie/fcreate/"> <text id="add_texte"> AJOUTER </text> <svg id="add"  xmlns="http://www.w3.org/2000/svg" fill="#165a70" width="40" height="40" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/> </svg>   </a>
 <?php
 $v = $this->viewvar;
 if(!empty($v)){
@@ -52,7 +57,7 @@ echo '
 			modal: true,
 			buttons: {
 				"Oui": function() {
-					window.location.href = "'.DIR_WEBROOT.'ccategorie/delete/" + $("#id_sup").html();
+					window.location.href = "'.DIR_WEBROOT.'csalarie/delete/" + $("#id_sup").html();
 				},
 				"Non": function() {
 					$( this ).dialog( "close" );
@@ -74,3 +79,4 @@ else{
 	echo "<h2 id='Aucun résultat'>Aucun résultat</h2>";
 }
 ?>
+</html>
