@@ -36,20 +36,31 @@ text-align: center;
 h2{
     color: darkred;
     font-family: Gadugi;
-
     margin-left: 10%;
 }
+
 #titre_page{
 	margin-left: 20%;
 	font-weight: bold;
+    /*color: #55ced8;*/
+    color: cornflowerblue;
+
+}
+#lien_add{
+	max-width: 20%;
+
 }
 #add{
-    margin-left:10%;
+
 }
 
 #add_texte{
-	width: 35%;
+	margin-left: 80%;
+    font-size: large;
+	color: #165a70;
+
 }
+
 
 table, table * {
 	background-color: rgba(0, 0, 0, 0.1);
@@ -133,13 +144,14 @@ legend{
 }
 
 #erreur{
-	display : none.
+	display : none;
 }
 .titre{
 	border-width:1px;
 	border-style:solid;
 	border-color:#165a70;	
 }
+
 
 a{
 text-decoration: #165a70;
