@@ -35,6 +35,11 @@ class ccategorie extends Controller {
         $this->render('fcreate');
     }
 
+    public function search(){
+        $search = $_POST['search'];
+
+    }
+
 
     public function fupdate($id){
         $this->categorie->read($id);

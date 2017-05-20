@@ -38,11 +38,11 @@ ALTER TABLE `emploi`
 -- Structure de la table `profil`
 --
 CREATE TABLE IF NOT EXISTS `profil` (
-  `surnom_profil` varchar(10) NOT NULL DEFAULT '',
+  `id_profil` int(11) NOT NULL,
+  `surnom_profil` varchar(10) DEFAULT NULL,
   `mdp_profil` varchar(50) DEFAULT NULL,
   `accreditation_profil` varchar(10) DEFAULT NULL,
-  `id_profil` int(11) DEFAULT NULL,
-  PRIMARY KEY (`surnom_profil`),
+  PRIMARY KEY (`id_profil`),
   KEY `profil_salarie` (`id_profil`)
 );
 

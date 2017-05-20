@@ -2,3 +2,9 @@ afficher un tableau dans chaque index de catégories, salariés, profil etc... ave
 puis les boutons modifier/supprimer
 
 Il faudrait aussi faire quand on appuie sur supprimer faire une verif oui ou non si on veut vraiment le supprimer
+
+
+
+faire une barre de recherche 
+
+faire une vérification du formulaire (voir si il est vide, mettre en majuscule le champ ville etc...)

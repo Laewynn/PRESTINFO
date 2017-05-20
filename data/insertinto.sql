@@ -45,16 +45,16 @@ INSERT INTO `emploi` (`matricule_emploi`, `libelle_emploi`, `taux_horaire_base_e
 --
 
 INSERT INTO `profil` (`id_profil`,`surnom_profil`, `mdp_profil`, `accreditation_profil`) VALUES
-(10,'durand', '8fe3b459953e19f902505ea92e5113e078448669', 'Admin'),
-(9,'genial', '060e5a621450024136177302e800aee23a931d0f', 'Admin'),
-(3,'lily', 'fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65', 'User'),
-(2,'papin', '63b395adf1ee35d0378b0a76887c8f88b1d7f503', 'User'),
-(4,'paulot', '126d332e5b9aaa3e028d1d08024a5c976bca4840', 'User'),
-(1,'pitt', '81c955fef0307edddc005a022bda210169ad7500', 'User'),
-(6,'polux', '01ef81866baae4014544aa76e21efa9a09eedf1a', 'User'),
-(7,'renaud', '81ef2ef7cd3a859923573a7bb84652871c617f7d', 'User'),
-(5,'rigou', 'db18e4d4d69ca777244c0b358a8103017d76961e', 'User'),
-(8,'varin', '7f2fc5ea6f901f633f1ac655f3ddd7eb45282678', 'User');
+(10,'durand', 'durand10', 'Admin'),
+(9,'genial', 'genial9', 'Admin'),
+(3,'lily', 'lily3', 'User'),
+(2,'papin', 'papin2', 'User'),
+(4,'paulot', 'paulot4', 'User'),
+(1,'pitt', 'pitt1', 'User'),
+(6,'polux', 'polux6', 'User'),
+(7,'renaud', 'renaud7', 'User'),
+(5,'rigou', 'rigou5', 'User'),
+(8,'varin', 'varin8', 'User');
 
 -- --------------------------------------------------------
 --

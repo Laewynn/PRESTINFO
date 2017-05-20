@@ -1,23 +1,40 @@
 <?php
-
+require_once(DIR_CORE."Model.php");
 class profil extends Model{
+    protected $id_profil;
     protected $surnom_profil;
     protected $mdp_profil;
     protected $accreditation_profil;
-    protected $id_profil;
 
     /**
      * profil constructor.
+     * @param $id_profil
      * @param $surnom_profil
      * @param $mdp_profil
      * @param $accreditation_profil
-     * @param $id_profil
      */
-    public function __construct($surnom_profil, $mdp_profil, $accreditation_profil, $id_profil)
+    public function __construct($id_profil = null, $surnom_profil = null, $mdp_profil = null, $accreditation_profil = null)
     {
+        parent::__construct("profil", "id_profil", false, array());
+        $this->id_profil = $id_profil;
         $this->surnom_profil = $surnom_profil;
         $this->mdp_profil = $mdp_profil;
         $this->accreditation_profil = $accreditation_profil;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdProfil()
+    {
+        return $this->id_profil;
+    }
+
+    /**
+     * @param mixed $id_profil
+     */
+    public function setIdProfil($id_profil)
+    {
         $this->id_profil = $id_profil;
     }
 
@@ -69,25 +86,5 @@ class profil extends Model{
         $this->accreditation_profil = $accreditation_profil;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getIdProfil()
-    {
-        return $this->id_profil;
-    }
-
-    /**
-     * @param mixed $id_profil
-     */
-    public function setIdProfil($id_profil)
-    {
-        $this->id_profil = $id_profil;
-    }
-
-
-
 
 }
-
-?>

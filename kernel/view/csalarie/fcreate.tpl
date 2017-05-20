@@ -3,7 +3,7 @@
     echo 'les éléments sont vides ! ';
 else { -->
 
-<form action=<?php echo DIR_WEBROOT.'ccategorie/create';?> method="post">
+<form action=<?php echo DIR_WEBROOT.'csalarie/create';?> method="post">
 <div id="erreur">
     <p>Vous n'avez pas rempli correctement les champs du formulaire !</p>
 </div>

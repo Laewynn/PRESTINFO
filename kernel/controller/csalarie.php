@@ -26,7 +26,7 @@ class csalarie extends Controller {
         $this->salarie->setPrenomSalarie($_POST['prenom_salarie']);
         $this->salarie->setCodePostalSalarie($_POST['codepostal_salarie']);
         $this->salarie->setRueSalarie($_POST['rue_salarie']);
-        $this->salarie->setVilleSalaris($_POST['ville_salarie']);
+        $this->salarie->setVilleSalarie($_POST['ville_salarie']);
         $this->salarie->create();
         $this->index();
     }

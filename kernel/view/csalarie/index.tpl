@@ -44,7 +44,7 @@ echo '
 
 </table>
 <div id="dialog" title="Suppression">
-	<span>Voulez-vous supprimer la catégorie <span id="id_sup"></span> ? </span>
+	<span>Voulez-vous supprimer le salarié <span id="id_sup"></span> ? </span>
 </div>
 <script>
 	$("#dialog").hide();

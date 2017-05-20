@@ -11,7 +11,7 @@
 
 
 /**
- * La classe Model permet de gérer la table client du projet Forum.
+ * La classe Model permet de gérer la table client du projet PRESTINFO
  *
  * @author Laëtitia Marchand <laetitiamarchand35@gmail.com>
  */

@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 
 </head>
-<p id="titre_page" xmlns="http://www.w3.org/1999/html">SALARIES </p>
+<p id="titre_page" xmlns="http://www.w3.org/1999/html">EMPLOI </p>
 
 <a href="<?php echo DIR_WEBROOT; ?>cemploi/fcreate/" id="lien_add"> <text id="add_texte"> AJOUTER </text> <svg id="add"  xmlns="http://www.w3.org/2000/svg" fill="#165a70" width="18" height="18" viewBox="1 1 18 18"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/> </svg>   </a>
 <br/>

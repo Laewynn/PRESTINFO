@@ -26,10 +26,7 @@ class Controller {
 		$this->viewvar = array_merge($this->viewvar, $data);
 	}
 
-	/**
-	* appelle la vue associée pour affichage 
-	* @param $script le nom de la vue à afficher
-	*/
+
 	public function render ($script){
 		extract ($this->viewvar);
 		ob_start();
@@ -37,6 +34,7 @@ class Controller {
 		$content = ob_get_clean();
 		require(DIR_VIEW.'layout/'.$this->layout.'.php');
 	}
+
 
 	/**
 	* Vient 

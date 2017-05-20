@@ -8,7 +8,7 @@ html{
 	background-repeat: no-repeat;
 	background-origin : content-box;
 	font-weight: bold;
-	background-color: #212121;
+	background-color: #333333;
 
 }
 #salaries{
@@ -166,7 +166,7 @@ color: #165a70;
 width: 100%;
 line-height: 12.5vh;
 text-align: center;
-	height: 25%;
+	height: 30%;
 /* background-color: red; */
 }
 
