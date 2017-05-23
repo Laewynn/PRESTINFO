@@ -1,8 +1,19 @@
 <link rel="stylesheet" href=".DIR_WEBROOT.'tabs.scss'" />
 <?php
- 	$header= "<a href=".DIR_WEBROOT." > 
+ 	$header= "<a href='".DIR_WEBROOT."' > 
  	            <h1> PRESTINFO -
- 	           Gestion des salariés</h1> </a> 	   
+ 	           Gestion des salariés</h1> </a> 
+ 	           <a  id='connexion' href='".DIR_WEBROOT."'>
+ 	            Connexion 
+ 	            <form action=\"connexion()\" method=\"post\">
+    Pseudo: <input type=\"text\" name=\"pseudo\" value=\"\" /> <br/>
+     
+    Mot de passe: <input type=\"password\" name=\"mot_de_passe\" value=\"\" />
+     
+    <input type=\"submit\" name=\"connexion\" value=\"Connexion\" />
+</form></a> 
+ 	           	   
+ 	           
 <ul>
     <li><a href=".DIR_WEBROOT."cindex>ACCUEIL </a></li>
     <hr width=\"2px\" size=\"14px\" />

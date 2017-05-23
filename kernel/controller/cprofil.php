@@ -43,14 +43,12 @@ class cprofil extends Controller {
 		}
 		$result = $this->Profil->find("surnom_profil = '".$_POST['surnom']."'", null);
 		if(sizeof($result) == 1){
-			$this->Utilisateur->read($result[0]['idutilisateur']);
-			if(password_verify($_POST['mdp'], $this->Utilisateur->getMDP())){
-				$_SESSION['id'] = $this->Utilisateur->getId();
-				$_SESSION['pseudo'] = $this->Utilisateur->getPseudo();
-				$_SESSION['email'] = $this->Utilisateur->getEmail();
-				$_SESSION['avatar'] = $this->Utilisateur->getAvatar();
-				$_SESSION['typeCompte'] = $this->Utilisateur->getTypeCompte();
-				require_once(CONTROLLER.'Accueil.php');
+			$this->Profil->read($result[0]['id_profil']);
+			if(password_verify($_POST['mdp_profil'], $this->Profil->getMdpProfil())){
+				$_SESSION['id_profil'] = $this->Utilisateur->getIdProfil();
+				$_SESSION['surnom_profil'] = $this->Utilisateur->getSurnomProfil();
+				$_SESSION['accreditation_profil'] = $this->Utilisateur->getAccreditationProfil();
+				require_once(DIR_WEBROOT.'index.php');
 				$Accueil = new controller_accueil();
 				$Accueil->index();
 			}

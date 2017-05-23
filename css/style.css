@@ -34,7 +34,7 @@ text-align: center;
 }
 
 h2{
-    color: darkred;
+    color: lightsalmon;
     font-family: Gadugi;
     margin-left: 10%;
 }
@@ -45,6 +45,13 @@ h2{
     /*color: #55ced8;*/
     color: cornflowerblue;
 
+}
+
+#connexion{
+
+	position: absolute;
+	right: 8%;
+	bottom : 80%
 }
 #lien_add{
 	max-width: 20%;

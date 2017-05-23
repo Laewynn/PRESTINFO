@@ -3,7 +3,11 @@ puis les boutons modifier/supprimer
 
 Il faudrait aussi faire quand on appuie sur supprimer faire une verif oui ou non si on veut vraiment le supprimer
 
+faire une connexion selon l'utilisateur (admin, user et comptable)
 
+Admin : Ajout/Lire/Modification et suppression des éléments de la BDD (PRESTINFO/Admin)
+User : Remplir les déplacements hebdomadaire des salariés (PRESTINFO/User)
+Comptable : Selon les informations fournies des salariés faire le calcul des salaires(user) sur un mois et un an (PRESTINFO/Compt)
 
 faire une barre de recherche 
 
