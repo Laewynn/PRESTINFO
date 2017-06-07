@@ -1,5 +1,5 @@
 <?php $t = explode('/',$_GET['p']); 
-foreach($profil as $k => $v) {
+$v = $this->viewvar['profil'];
 echo '<form action="'.DIR_WEBROOT.'cprofil/update/'.$t[2].'" method="post">
     <fieldset id="formulaire">
         <table id="tableau">
@@ -33,7 +33,7 @@ echo '<form action="'.DIR_WEBROOT.'cprofil/update/'.$t[2].'" method="post">
                 <th><input class="bouton"  type="button" onclick="redirect()" value="Retour"/></th>
             </tr>
         </table>';
-    }
+
     ?>
 </form>
 

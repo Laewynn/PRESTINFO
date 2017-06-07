@@ -1,14 +1,13 @@
-<html>
-<head>
+
 <meta charset="UTF-8">
 
-</head>
 <p id="titre_page" xmlns="http://www.w3.org/1999/html">EMPLOI </p>
 
 <a href="<?php echo DIR_WEBROOT; ?>cemploi/fcreate/" id="lien_add"> <text id="add_texte"> AJOUTER </text> <svg id="add"  xmlns="http://www.w3.org/2000/svg" fill="#165a70" width="18" height="18" viewBox="1 1 18 18"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/> </svg>   </a>
 <br/>
 <?php
-$v = $this->viewvar;
+$v = $this->viewvar['emploi'];
+
 if(!empty($v)){
 echo "
 <table>
@@ -27,7 +26,7 @@ echo "
 			<td> <a href="'.DIR_WEBROOT.'cemploi/fupdate/'.$v['matricule_emploi'].'">'.$v['matricule_emploi'].'  </td>
 			<td> '.$v['libelle_emploi'].'</td>
 			<td> '.$v['taux_horaire_base_emploi'].'</td>
-			<td> '.$v['matricule_categorie'].'</a></td>
+			<td> '.$v['matricule_categorie']['libelle_categorie'].'</a></td>
 			<td> <a href="'.DIR_WEBROOT.'cemploi/fupdate/'.$v['matricule_emploi'].'"><img src="'.DIR_IMG.'update_white_18x18.png"/> </a> </td>
 			<td> <svg id="'.$v['matricule_emploi'].'" class="corbeille" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>  </td>
 			<!-- <a href="'.DIR_WEBROOT.'cemploi/delete/'.$v['matricule_emploi'].'"> -->
@@ -75,4 +74,3 @@ else{
 	echo "<h2 id='Aucun résultat'>Aucun résultat</h2>";
 }
 ?>
-</html>

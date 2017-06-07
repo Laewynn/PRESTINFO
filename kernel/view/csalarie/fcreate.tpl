@@ -41,6 +41,11 @@ else { -->
             <th><input id="champ" type="text" name= "ville_salarie" /></th>
         </tr>
 
+        <tr>
+            <th> Emploi : </th>
+            <th><input id="champ" type="text" name= "matricule_emploi" /></th>
+        </tr>
+
     </table>
 </fieldset>
 <br/>

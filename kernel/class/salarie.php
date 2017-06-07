@@ -7,6 +7,8 @@ require_once(DIR_CORE."Model.php");
  	protected $codepostal_salarie;
  	protected $rue_salarie;
  	protected $ville_salarie;
+     protected $matricule_emploi;
+     protected $profil_salarie;
 
      /**
       * salarie constructor.
@@ -17,15 +19,17 @@ require_once(DIR_CORE."Model.php");
       * @param $rue_salarie
       * @param $ville_salarie
       */
-     public function __construct($id_salarie = null, $nom_salarie = null, $prenom_salarie= null, $codepostal_salarie= null, $rue_salarie= null, $ville_salarie= null)
+     public function __construct($id_salarie = null, $nom_salarie = null, $prenom_salarie= null, $codepostal_salarie= null, $rue_salarie= null, $ville_salarie= null, $matricule_emploi=null, $profil_salarie = null)
      {
-         parent::__construct("salarie", "id_salarie", false, array());
+         parent::__construct("salarie", "id_salarie", false, array("emploi" => "matricule_emploi", "profil" => "profil_salarie"));
          $this->id_salarie = $id_salarie;
          $this->nom_salarie = $nom_salarie;
          $this->prenom_salarie = $prenom_salarie;
          $this->codepostal_salarie = $codepostal_salarie;
          $this->rue_salarie = $rue_salarie;
          $this->ville_salarie = $ville_salarie;
+         $this->matricule_emploi = $matricule_emploi;
+         $this->profil_salarie = $profil_salarie;
      }
 
      /**
@@ -122,6 +126,38 @@ require_once(DIR_CORE."Model.php");
      public function setVilleSalarie($ville_salarie)
      {
          $this->ville_salarie = $ville_salarie;
+     }
+
+     /**
+      * @return null
+      */
+     public function getMatriculeEmploi()
+     {
+         return $this->matricule_emploi;
+     }
+
+     /**
+      * @param null $matricule_emploi
+      */
+     public function setMatriculeEmploi($matricule_emploi)
+     {
+         $this->matricule_emploi = $matricule_emploi;
+     }
+
+     /**
+      * @return null
+      */
+     public function getProfilSalarie()
+     {
+         return $this->profil_salarie;
+     }
+
+     /**
+      * @param null $profil_salarie
+      */
+     public function setProfilSalarie($profil_salarie)
+     {
+         $this->profil_salarie = $profil_salarie;
      }
 
 

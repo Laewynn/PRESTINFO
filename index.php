@@ -1,5 +1,15 @@
 
 <?php
+
+session_start();
+
+if(empty($_SESSION)){
+    $_SESSION['typeCompte'] = "Visiteur";
+    $_SESSION['surnom'] = "";
+    $_SESSION['id'] = 0;
+    $_SESSION['emploi'] = "rien";
+}
+
 define('DIR_WEBROOT', str_replace('index.php','', $_SERVER['SCRIPT_NAME']));
 define('DIR_ROOT', str_replace('index.php','', $_SERVER['SCRIPT_FILENAME']));
 

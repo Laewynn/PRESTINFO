@@ -49,7 +49,7 @@ else { -->
     });
 
     function redirect(){
-        window.location.href = "<?php echo DIR_WEBROOT; ?>csalarie/index";
+        window.location.href = "<?php echo DIR_WEBROOT; ?>cemploi/index";
     }
 </script>
 

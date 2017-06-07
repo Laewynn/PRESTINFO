@@ -4,10 +4,18 @@ require_once(DIR_CTRL.'/controller.php');
 class cemploi extends Controller {
 
     //attribs
-    var $models = array('emploi');
+    var $models = array('categorie', 'emploi');
+
+    public function __construct(){
+        parent::__construct($this->models);
+    }
 
     public function index() {
+
         $data['emploi'] = $this->emploi->find();
+        /*echo "<pre>";
+        var_dump($data['emploi'][0]);
+        echo "</pre>";*/
         $this->set($data);
         $this->render('index');
     }

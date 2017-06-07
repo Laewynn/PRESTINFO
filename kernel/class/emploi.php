@@ -15,7 +15,7 @@ class emploi extends Model{
      */
     public function __construct($matricule_emploi = null, $libelle_emploi =null , $taux_horaire_base_emploi =null , $matricule_categorie = null)
     {
-        parent::__construct("emploi", "matricule_emploi", false, array());
+        parent::__construct("emploi", "matricule_emploi", false, array("categorie" => "matricule_categorie"));
         $this->matricule_emploi = $matricule_emploi;
         $this->libelle_emploi = $libelle_emploi;
         $this->taux_horaire_base_emploi = $taux_horaire_base_emploi;
@@ -85,9 +85,6 @@ class emploi extends Model{
     {
         $this->matricule_categorie = $matricule_categorie;
     }
-
-
-
 
 }
 

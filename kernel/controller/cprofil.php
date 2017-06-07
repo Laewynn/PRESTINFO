@@ -105,5 +105,7 @@ class cprofil extends Controller {
 		$this->index();
 
 	}
+
+
 }
 ?>

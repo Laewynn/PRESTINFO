@@ -24,14 +24,6 @@
         protected $fk;
         // attributech sert à lister quels sont les attributs non-métiers (attributs de la classe où on travaille pas directement): donc les attributs qui ne correspondent à rien dans la table
 
-    private function doBelongsToAssoc(){
-        foreach($this->fk as $cle=>$valeur){
-            $id = $this->$valeur;
-            require('class/'.$cle.'.php');
-            $this->$valeur = new $cle();
-            $this->$valeur->read($id);
-        }
-    }
 	
     // Constructeur de la classe Model
 	public function __construct($table, $pk, $autoincrement, $fk){
@@ -41,7 +33,15 @@
         $this->attributech = array('table', 'pk','autoincrement','attributech', 'fk'); // pour ne pas les utilisers les attributs techniques des requêtes
         $this->fk = $fk;
 	}
-    
+
+        private function doBelongsToAssoc(){
+            foreach($this->fk as $cle=>$valeur){
+                $id = $this->$valeur;
+                require_once('class/'.$cle.'.php');
+                $this->$valeur = new $cle();
+                $this->$valeur->read($id);
+            }
+        }
     /**
     * Fonction qui sert à la connexion de la base de données
     * @param $id = la clé primaire de l'utilisateur 
@@ -186,29 +186,34 @@
     * @date 30/09/16
     */
     // Trouver un enregistrement en fonction d'un paramètre génériquement
-    public function find ($condition = null){
-        $sql = "SELECT * FROM {$this->table}";
+        public function find($condition=null, $orderBy = null, $keyNotUse = array()){
+            $keyNotUse = array_merge($keyNotUse, $this->attributech);
+            // var_dump($keyNotUse);
 
-        if($condition != null){
-            $sql += "WHERE {$condition}";
+            $req = "SELECT * FROM {$this->table}";
+
+            if($condition != null){
+                $req = $req." WHERE {$condition}";
+            }
+
+            if($orderBy != null){
+                $req = $req." ORDER BY {$orderBy}";
+            }
+            $bdd = $this->connexion();
+            $rep = $bdd->query($req);
+            $bdd = null;
+
+            $tab = array();
+            while($result = $rep->fetch()){
+                $object = new $this->table();
+                $object->read($result['0']);
+                // var_dump($keyNotUse);
+                $tab[] = $object->totable($keyNotUse);
+            }
+            $rep->closeCursor();
+            // var_dump($tab);
+            return($tab);
         }
-
-
-    	//echo $sql;
-    	$bdd= $this->connexion();
-    	$sql=$bdd->query($sql);
-        $bdd = null;
-
-    	
-        $tab = null;
-    	// Tant qu'il y'as un résultat ça continue à lire
-    	while ($resultat=$sql->fetch(PDO::FETCH_ASSOC)){
-    	// print_r($sql);
-    	$tab[]=$resultat;
-   		}
-    	return $tab;
-    }
-
 
     /**
     * Fonction qui sert à mettre à jour les lignes de la table génériquement
@@ -221,7 +226,7 @@
         $propriete = "";
         $valeur = "";
 
-        if($this->autoincrement){ // si la clé primaire est en auto-incrément, 
+        if($this->autoincrement){ // si la clé primaire est en auto-incrément,
             $this->attributech[]=$this->pk; // ALORS on l'ajoute dans le tableau des attributs techiniques, comme ça , elle ne sera pas ajoutée dans la requête
         }
 
@@ -234,31 +239,31 @@
             }
         }
 
-      
+
         /*
         * On a accès au NOM de la clé primaire, mais pas sa VALEUR. enfin pas directement. Mais on en a besoin dans la requête pour le WHERE
         * On veut donc écrire, par exemple :
         * $this->idutilisateur;
         * Mais on n'as pas le idutilisateur, puisqu'on ne sait pas si on est sur un utilisateur, un sujet... vu qu'ici, on reste générique.
         * (en gros, ça peut être idutilisateur, idsujet, idpost,  idnimportequoienfait, on ne peut pas le deviner d'ici)
-        * 
+        *
         * Alors astuce : $this->pk nous donne le nom de la PK. donc , on va utiliser ça pour faire en sorte que le PHP écrive :
         *                $this_>idutilisateur;
         * Voilà donc ce qu'il va se passer : $this->{$this->pk}}
         *                                    = $this->idutilisateur;
-        *                                     = 1  
+        *                                     = 1
         * Et c'est fini !
-        */      
+        */
         $valeurpk = "{$id}";
         $sql= "UPDATE {$this->table} SET ";
          $sql = $sql . $propriete;
-        $sql = substr($sql, 0, -1); 
+        $sql = substr($sql, 0, -1);
         $sql = $sql ." WHERE $this->pk = '$valeurpk'";
         echo " <br/> Mise à jour de la table : <br/> " . $sql;
 
         $bdd = $this->connexion();
         $sql= $bdd->prepare($sql);
-        
+
         $sql->execute();
         $bdd = null;
     }
@@ -281,17 +286,35 @@
          //echo " <br/> Supprimer une ligne de la table : <br/> " .$req;
         
     }
-
-    public function totable() {
-        $nom = get_class($this);
-        $tmp = array();
-        foreach ($this as $key => $val) {
-            $tmp[$key] = $val;
+        /**
+         * Fonction qui transforme les objets en tableau
+         * @return $data
+         * @author MARCHAND Laëtitia
+         * @date 07/10/16
+         */
+        /**
+         *	totable - Envoie toute les valeurs de l'objet courant dans un tableau
+         *
+         *	@return Tab Tableau de valeurs
+         */
+        public function totable($keyNotUse = array()){
+            /*echo "<p>this</p>";
+            var_dump($this);
+            echo "<p>keyNotUse</p>";
+            var_dump($keyNotUse);*/
+            $tab = array();
+            foreach($this as $key=>$val){
+                if(!in_array($key, $keyNotUse)){
+                    if(is_object($val)){
+                        /*echo "<p>val</p>";
+                        var_dump($val);*/
+                        $val = $val->toTable($keyNotUse);
+                    }
+                    $tab[$key] = $val;
+                }
+            }
+            return $tab;
         }
-        $data = array();
-        $data[$nom] = $tmp;
-        return $data;
-    }
 
 }
 

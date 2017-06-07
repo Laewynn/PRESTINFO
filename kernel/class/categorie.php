@@ -86,7 +86,6 @@ class categorie extends Model{
         $this->pu_repas = $pu_repas;
     }
 
-
 }
 
 ?>
